@@ -20,7 +20,7 @@ public class Server  extends Thread{
     }
 
     public void removeWorker(ServerWorker serverWorker){
-workrsList.remove(serverWorker);
+        workrsList.remove(serverWorker);
     }
 
     @Override

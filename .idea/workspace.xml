@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f8b7fad-fc3b-4e06-a42b-f6cd7bf5614d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ChatClient/src/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatClient/src/LoginWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatClient/src/MessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatClient/src/MessagePane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatClient/src/UserListPane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatClient/src/UserStatusListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatServer/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatServer/src/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatServer/src/ServerWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatServer/src/ServerWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatServer/ServerWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatServer/ServerWorker.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -30,8 +38,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.LoginWindow">
+    <configuration name="ChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatClient" />
+      <module name="ChatClient" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LoginWindow" />
+      <module name="ChatClient" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ServerMain" />
       <module name="ChatServer" />
@@ -39,9 +62,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserListPane" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UserListPane" />
+      <module name="ChatClient" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoginWindow" />
+        <item itemvalue="Application.ChatClient" />
         <item itemvalue="Application.ServerMain" />
+        <item itemvalue="Application.UserListPane" />
       </list>
     </recent_temporary>
   </component>
@@ -59,26 +92,54 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="443" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1593481623529">
+    <state x="443" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1594496428891">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="443" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1593481623529" />
-    <state width="1309" height="177" key="GridCell.Tab.0.bottom" timestamp="1593905695152">
+    <state x="443" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1594496428891" />
+    <state x="382" y="193" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1593982922514">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1309" height="177" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1593905695152" />
-    <state width="1309" height="177" key="GridCell.Tab.0.center" timestamp="1593905695152">
+    <state x="382" y="193" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1593982922514" />
+    <state width="1309" height="177" key="GridCell.Tab.0.bottom" timestamp="1594502661067">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1309" height="177" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1593905695152" />
-    <state width="1309" height="177" key="GridCell.Tab.0.left" timestamp="1593905695151">
+    <state width="1309" height="177" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1594502661067" />
+    <state width="1309" height="177" key="GridCell.Tab.0.center" timestamp="1594502661066">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1309" height="177" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1593905695151" />
-    <state width="1309" height="177" key="GridCell.Tab.0.right" timestamp="1593905695152">
+    <state width="1309" height="177" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1594502661066" />
+    <state width="1309" height="177" key="GridCell.Tab.0.left" timestamp="1594502661065">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1309" height="177" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1593905695152" />
+    <state width="1309" height="177" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1594502661065" />
+    <state width="1309" height="177" key="GridCell.Tab.0.right" timestamp="1594502661066">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1309" height="177" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1594502661066" />
+    <state width="1309" height="223" key="GridCell.Tab.1.bottom" timestamp="1594000559647">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1309" height="223" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1594000559647" />
+    <state width="1309" height="223" key="GridCell.Tab.1.center" timestamp="1594000559647">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1309" height="223" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1594000559647" />
+    <state width="1309" height="223" key="GridCell.Tab.1.left" timestamp="1594000559646">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1309" height="223" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1594000559646" />
+    <state width="1309" height="223" key="GridCell.Tab.1.right" timestamp="1594000559647">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1309" height="223" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1594000559647" />
+    <state x="313" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1594497675874">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="313" y="165" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1594497675874" />
+    <state x="164" y="27" width="1037" height="741" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1594095679628">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="164" y="27" width="1037" height="741" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.768@0.0.1366.768" timestamp="1594095679628" />
     <state x="0" y="0" key="new project wizard" timestamp="1593455701898">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

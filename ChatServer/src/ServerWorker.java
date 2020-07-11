@@ -33,6 +33,7 @@ public class ServerWorker extends Thread {
         InputStream inputStream = clientSocket.getInputStream();
         this.outputStream = clientSocket.getOutputStream();
 
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         String line;
         while ((line = reader.readLine()) != null) {
@@ -48,10 +49,9 @@ public class ServerWorker extends Thread {
                     handleMessage(tokens);
                 } else if ("join".equalsIgnoreCase(command)) {
                     handleJoin(tokens);
-                }else if("leave".equalsIgnoreCase(command)){
+                } else if ("leave".equalsIgnoreCase(command)) {
                     handleLeave(tokens);
-                }
-                else {
+                } else {
                     String message = "unknown " + command + "\n";
                     outputStream.write(message.getBytes());
                 }
@@ -80,21 +80,22 @@ public class ServerWorker extends Thread {
                 for (ServerWorker worker : workers) {
                     if (worker.getUser() != null && !user.equals(worker.getUser())) {
                         String onlineUsersMessage = worker.getUser() + " is online\n";
-                        //worker.send(onlineUsersMessage);
+                        worker.send(onlineUsersMessage);
                         send(onlineUsersMessage);
                     }
                 }
 
                 // send other online users CURRENT user's status
-                String onlineMessage = user + " is online\n";
+                String onlineMessage = "online " + user + "\n";
                 for (ServerWorker worker : workers) {
                     if (!user.equals(worker.getUser())) {
                         worker.send(onlineMessage);
                     }
                 }
             } else {
-                String message = "Login attempt failed. Incorrect username or password";
+                String message = "Login attempt failed. Incorrect username or password\n";
                 outputStream.write(message.getBytes());
+                System.err.println("Login failed for " + username);
             }
         }
     }
@@ -154,7 +155,7 @@ public class ServerWorker extends Thread {
         return channelSet.contains(channel);
     }
 
-    private void handleLeave(String[] tokens){
+    private void handleLeave(String[] tokens) {
         if (tokens.length > 1) {
             String channel = tokens[1];
             channelSet.remove(channel);
